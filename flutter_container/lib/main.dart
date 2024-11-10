@@ -15,7 +15,13 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           body: Container(
-            child: Text("Flutter"),
+            margin: const EdgeInsets.all(40), //margin for the all direction
+            // margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+            padding: const EdgeInsets.all(30), //affect to the child
+            width: 200,
+            height: 200,
+            color: Colors.blue,
+            child: const Text("Flutter"),
           ),
         ),
       ),
