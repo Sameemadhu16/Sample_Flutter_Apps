@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,27 +9,30 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Flutter Container",
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          body: Container(
-            margin: const EdgeInsets.all(40), //margin for the all direction
-            // margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-            // padding: const EdgeInsets.all(30), //affect to the child
-            width: 200,
-            height: 200,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.blue,
-                border: Border.all(
-                  color: const Color.fromARGB(255, 188, 15, 15),
-                  width: 3,
-                )),
-            child: const Center(
-              child: Text("Flutter"),
-            ),
+          body: Column(
+            children: [
+              Text(
+                "Flutter is easy",
+                style: TextStyle(
+                  fontSize: 40,
+                ),
+              ),
+              Text(
+                "Dart is easy",
+                style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.red,
+                ),
+              ),
+              Icon(
+                Icons.restaurant,
+                size: 40,
+              )
+            ],
           ),
         ),
       ),
