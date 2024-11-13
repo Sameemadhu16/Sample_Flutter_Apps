@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return MaterialApp(
-      title: "Flutter Layouts",
+      title: "Layout Design 2",
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
@@ -21,18 +21,33 @@ class MyApp extends StatelessWidget {
           body: Padding(
             padding: const EdgeInsets.all(10.0),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              mainAxisSize: MainAxisSize.max,
+              //Whole app is a column
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                  color: const Color(0xff06FFA5),
                   width: double.infinity,
-                  height: 300,
+                  height: 150,
+                  color: const Color(0xff06FFA5),
                 ),
                 Container(
-                  color: const Color(0xffFFE500),
                   width: double.infinity,
-                  height: 300,
+                  height: 150,
+                  color: const Color(0xff06FFA5),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: 175,
+                      height: 300,
+                      color: const Color(0xffFFE500),
+                    ),
+                    Container(
+                      width: 175,
+                      height: 300,
+                      color: const Color(0xffFFE500),
+                    ),
+                  ],
                 )
               ],
             ),
