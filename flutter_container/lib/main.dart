@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           body: Container(
-            padding: EdgeInsets.all(20),
-            margin: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             width: 300,
             height: 300,
             color: Colors.yellow,
