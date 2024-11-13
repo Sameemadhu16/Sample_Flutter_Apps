@@ -15,22 +15,28 @@ class MyApp extends StatelessWidget {
         child: Scaffold(
           body: Column(
             children: [
-              Text(
-                "Flutter is easy",
-                style: TextStyle(
-                  fontSize: 40,
+              Expanded(
+                child: Text(
+                  "Flutter is easy",
+                  style: TextStyle(
+                    fontSize: 40,
+                  ),
                 ),
               ),
-              Text(
-                "Dart is easy",
-                style: TextStyle(
-                  fontSize: 40,
-                  color: Colors.red,
+              Expanded(
+                child: Text(
+                  "Dart is easy",
+                  style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.red,
+                  ),
                 ),
               ),
-              Icon(
-                Icons.restaurant,
-                size: 40,
+              Expanded(
+                child: Icon(
+                  Icons.restaurant,
+                  size: 40,
+                ),
               )
             ],
           ),
