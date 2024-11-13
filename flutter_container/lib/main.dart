@@ -14,12 +14,14 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           body: Container(
+            padding: EdgeInsets.all(20),
+            margin: EdgeInsets.all(20),
             width: 300,
             height: 300,
             color: Colors.yellow,
             child: const Column(
               mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Flutter is easy",
