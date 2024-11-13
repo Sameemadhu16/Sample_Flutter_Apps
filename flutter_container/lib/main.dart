@@ -13,23 +13,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          body: Column(
+          body: Row(
             children: [
               Expanded(
                 child: Text(
                   "Flutter is easy",
-                  style: TextStyle(
-                    fontSize: 40,
-                  ),
+                  style: TextStyle(fontSize: 20),
                 ),
               ),
               Expanded(
                 child: Text(
                   "Dart is easy",
-                  style: TextStyle(
-                    fontSize: 40,
-                    color: Colors.red,
-                  ),
+                  style: TextStyle(fontSize: 20),
                 ),
               ),
               Expanded(
