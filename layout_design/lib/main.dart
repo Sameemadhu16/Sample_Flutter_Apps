@@ -54,18 +54,18 @@ class MyApp extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
                       children: [
                         Container(
                           height: 180,
-                          width: 150,
+                          width: 170,
                           color: const Color(0xffFFE500),
                         ),
                         const SizedBox(height: 10),
                         Container(
-                          width: 150,
+                          width: 170,
                           height: 100,
                           color: const Color(0xffFFE500),
                         )
@@ -74,19 +74,19 @@ class MyApp extends StatelessWidget {
                     Column(
                       children: [
                         Container(
-                          width: 150,
+                          width: 170,
                           height: 100,
                           color: const Color(0xff7752FE),
                         ),
                         const SizedBox(height: 10),
                         Container(
-                          width: 150,
+                          width: 170,
                           height: 100,
                           color: const Color(0xff0E00AC),
                         ),
                         const SizedBox(height: 10),
                         Container(
-                          width: 150,
+                          width: 170,
                           height: 100,
                           color: const Color(0xff7752FE),
                         )
