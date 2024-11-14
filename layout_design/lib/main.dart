@@ -9,48 +9,93 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
     return MaterialApp(
-      title: "Layout Design 2",
       debugShowCheckedModeBanner: false,
+      title: "Layout Design 3",
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: const Color(0xff9E00FF),
           ),
-          body: Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Column(
-              //Whole app is a column
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  width: double.infinity,
-                  height: 150,
-                  color: const Color(0xff06FFA5),
-                ),
-                Container(
-                  width: double.infinity,
-                  height: 150,
-                  color: const Color(0xff06FFA5),
-                ),
-                Row(
+          body: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      width: 175,
-                      height: 300,
-                      color: const Color(0xffFFE500),
+                      width: 170,
+                      height: 150,
+                      decoration: const BoxDecoration(
+                        color: Color(0xff06FFA5),
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
                     ),
                     Container(
-                      width: 175,
-                      height: 300,
-                      color: const Color(0xffFFE500),
-                    ),
+                      width: 170,
+                      height: 150,
+                      decoration: const BoxDecoration(
+                        color: Color(0xff06FFA5),
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
+                    )
                   ],
-                )
-              ],
-            ),
+                ),
+              ),
+              Container(
+                width: 375,
+                height: 150,
+                decoration: const BoxDecoration(
+                  color: Color(0xff06FFA5),
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          height: 180,
+                          width: 150,
+                          color: const Color(0xffFFE500),
+                        ),
+                        const SizedBox(height: 10),
+                        Container(
+                          width: 150,
+                          height: 100,
+                          color: const Color(0xffFFE500),
+                        )
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          width: 150,
+                          height: 100,
+                          color: const Color(0xff7752FE),
+                        ),
+                        const SizedBox(height: 10),
+                        Container(
+                          width: 150,
+                          height: 100,
+                          color: const Color(0xff0E00AC),
+                        ),
+                        const SizedBox(height: 10),
+                        Container(
+                          width: 150,
+                          height: 100,
+                          color: const Color(0xff7752FE),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              )
+            ],
           ),
         ),
       ),
