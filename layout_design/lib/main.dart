@@ -10,92 +10,56 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Layout 4 design",
       debugShowCheckedModeBanner: false,
-      title: "Layout Design 3",
       home: SafeArea(
         child: Scaffold(
+          backgroundColor: Colors.black,
           appBar: AppBar(
-            backgroundColor: const Color(0xff9E00FF),
+            backgroundColor: const Color(0xffFFE500),
           ),
-          body: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      width: 170,
-                      height: 150,
-                      decoration: const BoxDecoration(
-                        color: Color(0xff06FFA5),
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
-                      ),
-                    ),
-                    Container(
-                      width: 170,
-                      height: 150,
-                      decoration: const BoxDecoration(
-                        color: Color(0xff06FFA5),
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
-                      ),
-                    )
-                  ],
-                ),
-              ),
-              Container(
-                width: 375,
-                height: 150,
-                decoration: const BoxDecoration(
-                  color: Color(0xff06FFA5),
-                  borderRadius: BorderRadius.all(Radius.circular(10)),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          height: 180,
-                          width: 170,
-                          color: const Color(0xffFFE500),
+          body: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  width: double.infinity,
+                  height: 150,
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 150,
+                        width: 185,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(10))
                         ),
-                        const SizedBox(height: 10),
-                        Container(
-                          width: 170,
-                          height: 100,
-                          color: const Color(0xffFFE500),
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Container(
-                          width: 170,
-                          height: 100,
-                          color: const Color(0xff7752FE),
-                        ),
-                        const SizedBox(height: 10),
-                        Container(
-                          width: 170,
-                          height: 100,
-                          color: const Color(0xff0E00AC),
-                        ),
-                        const SizedBox(height: 10),
-                        Container(
-                          width: 170,
-                          height: 100,
-                          color: const Color(0xff7752FE),
-                        )
-                      ],
-                    )
-                  ],
+                      )
+                    ],
+                  ),
                 ),
-              )
-            ],
+                Container(
+                  width: double.infinity,
+                  height: 75,
+                  color: const Color(0xffCC00FF),
+                ),
+                Container(
+                  width: double.infinity,
+                  height: 75,
+                  color: const Color(0xff06FFA5),
+                ),
+                Container(
+                  width: double.infinity,
+                  height: 200,
+                  color: const Color(0xffFFE500),
+                ),
+                Container(
+                  width: double.infinity,
+                  height: 75,
+                  color: const Color(0xff06FFA5),
+                ),
+              ],
+            ),
           ),
         ),
       ),
