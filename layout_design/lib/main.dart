@@ -7,6 +7,8 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  final double borderRadius = 10;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,26 +29,56 @@ class MyApp extends StatelessWidget {
                   width: double.infinity,
                   height: 150,
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
                         height: 150,
                         width: 185,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(10))
-                        ),
-                      )
+                            borderRadius: BorderRadius.circular(borderRadius),
+                            color: Color(0xff06FFA5)),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            height: 70,
+                            width: 185,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(borderRadius),
+                              color: Color(0xff06FFA5),
+                            ),
+                          ),
+                          Container(
+                            height: 70,
+                            width: 185,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(borderRadius),
+                              color: Color(0xffFFE500),
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
                 Container(
                   width: double.infinity,
-                  height: 75,
-                  color: const Color(0xffCC00FF),
+                  height: 80,
+                  // color: const Color(0xffCC00FF),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(borderRadius),
+                    color: Color(0xffCC00FF),
+                  ),
                 ),
                 Container(
                   width: double.infinity,
-                  height: 75,
-                  color: const Color(0xff06FFA5),
+                  height: 80,
+                  // color: const Color(0xff06FFA5),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(borderRadius),
+                    color: Color(0xff06FFA5),
+                  ),
                 ),
                 Container(
                   width: double.infinity,
@@ -55,7 +87,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Container(
                   width: double.infinity,
-                  height: 75,
+                  height: 80,
                   color: const Color(0xff06FFA5),
                 ),
               ],
