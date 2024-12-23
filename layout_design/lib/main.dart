@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Container(
+                SizedBox(
                   width: double.infinity,
                   height: containerHeight,
                   child: Row(
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
                         width: containerWidth,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(borderRadius),
-                            color: Color(0xff06FFA5)),
+                            color: const Color(0xff06FFA5)),
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
                             width: containerWidth,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(borderRadius),
-                              color: Color(0xff06FFA5),
+                              color: const Color(0xff06FFA5),
                             ),
                           ),
                           Container(
@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
                             width: containerWidth,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(borderRadius),
-                              color: Color(0xffFFE500),
+                              color: const Color(0xffFFE500),
                             ),
                           ),
                         ],
@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
                   // color: const Color(0xffCC00FF),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(borderRadius),
-                    color: Color(0xffCC00FF),
+                    color: const Color(0xffCC00FF),
                   ),
                 ),
                 Container(
@@ -80,10 +80,10 @@ class MyApp extends StatelessWidget {
                   // color: const Color(0xff06FFA5),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(borderRadius),
-                    color: Color(0xff06FFA5),
+                    color: const Color(0xff06FFA5),
                   ),
                 ),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   height: containerHeight * 2,
                   child: Row(
@@ -95,7 +95,7 @@ class MyApp extends StatelessWidget {
                         // color: Color(0xffFFE500),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(borderRadius),
-                            color: Color(0xffFFE500)),
+                            color: const Color(0xffFFE500)),
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -139,28 +139,28 @@ class MyApp extends StatelessWidget {
                         height: circleWidthAndHeight,
                         width: circleWidthAndHeight,
                         decoration: BoxDecoration(
-                            color: Color(0xffCC00FF),
+                            color: const Color(0xffCC00FF),
                             borderRadius: BorderRadius.circular(100)),
                       ),
                       Container(
                         height: circleWidthAndHeight,
                         width: circleWidthAndHeight,
                         decoration: BoxDecoration(
-                            color: Color(0xffFFE500),
+                            color: const Color(0xffFFE500),
                             borderRadius: BorderRadius.circular(100)),
                       ),
                       Container(
                         height: circleWidthAndHeight,
                         width: circleWidthAndHeight,
                         decoration: BoxDecoration(
-                            color: Color(0xff06FFA5),
+                            color: const Color(0xff06FFA5),
                             borderRadius: BorderRadius.circular(100)),
                       ),
                       Container(
                         height: circleWidthAndHeight,
                         width: circleWidthAndHeight,
                         decoration: BoxDecoration(
-                            color: Color(0xff7752FE),
+                            color: const Color(0xff7752FE),
                             borderRadius: BorderRadius.circular(100)),
                       ),
                     ],
